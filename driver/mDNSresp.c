@@ -160,6 +160,7 @@ void ICACHE_FLASH_ATTR sendOne(struct _host *h)
 	mDNSconn.proto.udp->remote_ip[1] = 0;
 	mDNSconn.proto.udp->remote_ip[2] = 0;
 	mDNSconn.proto.udp->remote_ip[3] = 251;
+	mDNSconn.proto.udp->remote_port = 5353;
 	mDNSconn.proto.udp->local_port = 5353;
 #ifdef MDNSRESP_DEBUG
 	hexdump("sending",h->mdnsresp, h->len);
