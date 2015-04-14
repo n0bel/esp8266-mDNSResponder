@@ -1,6 +1,16 @@
 /*
-	The hello world demo
-*/
+ * user_main.c
+ *
+ * Test/example program for the Simple mDNS responder
+ *
+ *  Simple mDNS responder.
+ *  It replys to mDNS IP (IPv4/A) queries and optionally broadcasts ip advertisements
+ *  using the mDNS protocol
+ *  Created on: Apr 10, 2015
+ *      Author: Kevin Uhlir (n0bel)
+ *
+ */
+
 
 #include <ets_sys.h>
 #include <osapi.h>
