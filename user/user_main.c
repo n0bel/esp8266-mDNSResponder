@@ -85,7 +85,10 @@ void ICACHE_FLASH_ATTR ready(void *arg)
 
 void ICACHE_FLASH_ATTR user_init(void)
 {
-	// Configure the UART
+	// Configure the UART (this is the same baudrate as the bootloader uses)
+	// If you're using an FTDI chip based serial port, you can use that baud rate
+	// If your terminal software handles it (try typing over the baud rate drop down).
+	// Otherwise of course use something more normal
 	uart_init(BIT_RATE_74880, BIT_RATE_74880);
 
 	os_timer_disarm(&startup_timer);

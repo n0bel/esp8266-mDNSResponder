@@ -12,5 +12,6 @@ connection (out of the 4 that the SDK supports)
 The main code is in driver/mDNSresp.c and include/driver/mDNSresp.h
 
 A test/example is given as user/user_main.c
+This test program uses the 74880 baud rate that the boot loader uses.  (I got tired of seeing giberish on reset)  If you use an FTDI based serial dongle, you can set this rate, if your terminal program handles it.  Otherwise just change it to something more normal (line 92)
 
-
+ 
