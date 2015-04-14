@@ -6,7 +6,11 @@ mDNS aka Bonjour, avahi, etc.
 
 Helps with resolving <hostname>.local to IP addresses on your local network.
 
+It allows multiple host names and ip resolution (up to 5).  It utilizes one (1) UDP
+connection (out of the 4 that the SDK supports)
+
 The main code is in driver/mDNSresp.c and include/driver/mDNSresp.h
 
 A test/example is given as user/user_main.c
+
 
