@@ -43,8 +43,8 @@ void ICACHE_FLASH_ATTR ready(void *arg)
 	if (trycount == 20)
 	{
 		struct station_config sta_conf;
-		os_strncpy((char*)sta_conf.ssid, "YOUR SSID", sizeof sta_conf.ssid);
-		os_strncpy((char*)sta_conf.ssid, "YOUR PASSWORD", sizeof sta_conf.ssid);
+		os_strncpy((char*)sta_conf.ssid, "YOUR SSID HERE", sizeof sta_conf.ssid);
+		os_strncpy((char*)sta_conf.ssid, "YOUR PASSWORD HERE", sizeof sta_conf.ssid);
 		wifi_station_disconnect();
 		wifi_set_opmode(STATION_MODE);
 		wifi_station_set_config(&sta_conf);
